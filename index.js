@@ -14,8 +14,8 @@ function submitData(userName, userEmail){
         fetch('http://localhost:3000/users', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json'
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(userInfo) //convert JS object to JSON
         })
